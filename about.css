@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+body{
+
+
+    cursor: crosshair;
+    margin: 0;
+    padding: 0;
+    background-image: url(assets/wp10412371.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 49, 49);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+
+}
+
+
+h1{
+    padding: 10%;
+    margin-top: 100px;
+    width: 59%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 150px;
+    filter: drop-shadow(0 0 20px);
+    color: #006475;
+    color: aqua;
+    z-index: 2;
+    
+
+}
+
+h2{
+    
+    padding: 100px;
+    margin-top: -350px;
+    width: 60%;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    filter: drop-shadow(0 0 20px);
+    color: #bbf5ff;
+    color: rgb(0, 0, 54), transparent;
+    filter: drop-shadow(0 0 50px);
+    z-index: 1;
+
+}
+
+
+#musicBtn{
+
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(0, 183, 255, 0.644);
+
+    background: rgba(0, 195, 255, 0.253);
+    backdrop-filter: blur(15px);
+
+    cursor: pointer;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    box-shadow: 0 0 20px rgba(0, 110, 255, 0.4);
+    z-index: 3;
+    filter: drop-shadow(0 0 50px);
+    color: #00e1ff;
+
+}
+
+
+/* Music wave icon */
+
+.music-icon{
+
+    width:5px;
+    height:20px;
+
+    background:#00aeff;
+
+    border-radius:10px;
+
+    position:relative;
+
+    animation: sound 1s infinite;
+
+}
+
+
+.music-icon::before,
+.music-icon::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:5px;
+    height:15px;
+
+    background:#00e1ff;
+
+    border-radius:10px;
+
+}
+
+
+.music-icon::before{
+
+    left:-10px;
+    top:5px;
+
+}
+
+
+.music-icon::after{
+
+    right:-10px;
+    top:2px;
+
+}
+
+
+@keyframes sound{
+
+    0%,100%{
+        height:10px;
+    }
+
+    50%{
+        height:30px;
+    }
+
+}
+
+.music-icon{
+
+    animation: fade 2s;
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity: 0;
+    
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+logo{
+
+    position: fixed;
+}
+
+logo{
+
+    
+}
+
+
+
+.side-images{
+
+    position: fixed;
+
+}
+
+.side-images{
+
+    margin-top: -500px;
+    margin-left: 1090px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    border-color: #bbf5ff;
+    filter: drop-shadow(0 0 10px);
+    color: #00e1ff;
+}
+
+.side-images{
+
+   width: 850px;
+   height: 750px;
+
+   animation: move 3s infinite;
+}
+
+@keyframes move{
+
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+
+        transform: translateY(20px);
+    }
+
+    100%{
+
+        transform: translateY(0);
+    }
+}
+
+.navbar{
+
+    width:100%;
+
+    height:80px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    grap:50px;
+
+    padding:0 50px;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    background:rgba(0,0,0,0.4);
+
+    backdrop-filter:blur(10px);
+
+    z-index:1000;
+
+}
+
+
+.logo img{
+
+    width:70px;
+
+    height:70px;
+    left: 200px;
+
+    object-fit:contain;
+
+}
+
+
+.nav-links{
+
+    display:flex;
+
+    gap:30px;
+
+    list-style:none;
+
+}
+
+
+.nav-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    transition:0.3s;
+
+}
+
+
+.nav-links a:hover{
+
+    color:#00ffff;
+
+}
+
+.button-witelist{
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transform: translateX(510px);
+    margin-top: -70px;
+    position: center;
+    bottom: 30px;
+    left: 30px;
+
+    width: 120px;
+    height: 60px;
+
+    border-radius: 30%;
+
+    border: 1px solid rgba(0, 183, 255, 0.644);
+
+    background: rgba(0, 195, 255, 0.253);
+    backdrop-filter: blur(15px);
+
+    cursor: pointer;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    box-shadow: 0 0 20px rgba(0, 110, 255, 0.4);
+    z-index: 3;
+    filter: drop-shadow(0 0 50px);
+    color: #00e1ff;
+}
